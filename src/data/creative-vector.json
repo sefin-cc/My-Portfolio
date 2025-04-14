@@ -1,21 +1,50 @@
 [
     {
       "id": 1,
-      "title": "Sunset Bliss",
-      "caption": "A calming sunset over the ocean.",
-      "image": "about"
+      "title": "LOGO DESIGN",
+      "caption": "Illustrator | After Effects",
+      "image": "bigbite"
     },
     {
       "id": 2,
-      "title": "Forest Path",
-      "caption": "A trail leading deep into the forest.",
-      "image": "about"
+      "title": "MOUSEPAD DESIGN",
+      "caption": "Illustrator",
+      "image": "mousepad"
     },
     {
       "id": 3,
-      "title": "City Lights",
-      "caption": "Skyscrapers glowing at night.",
-      "image": "about"
+      "title": "Logo Design",
+      "caption": "Illustrator",
+      "image": "res"
+    },
+    {
+      "id": 4,
+      "title": "Logo Design",
+      "caption": "Illustrator",
+      "image": "telesis"
+    },
+    {
+      "id": 5,
+      "title": "Character Animation",
+      "caption": "Illustrator | After Effects",
+      "image": "jake"
+    },
+    {
+      "id": 6,
+      "title": "Logo Design",
+      "caption": "Illustrator",
+      "image": "battleads"
+    },
+    {
+      "id": 7,
+      "title": "Character Animation",
+      "caption": "Illustrator | After Effects",
+      "image": "doctor"
+    },
+    {
+      "id": 8,
+      "title": "Logo Design",
+      "caption": "Illustrator",
+      "image": "stage"
     }
-
   ]

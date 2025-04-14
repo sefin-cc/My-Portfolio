@@ -18,7 +18,7 @@ const GalleryGrid = ({ title, items, images, onClick }: GalleryGridProps) => {
   return (
     <div className="pb-20">
         <motion.p
-            className="px-4 text-2xl font-semibold tracking-wide"
+            className="px-4 text-2xl font-semibold tracking-wide uppercase "
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -32,11 +32,11 @@ const GalleryGrid = ({ title, items, images, onClick }: GalleryGridProps) => {
             {title}
         </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 py-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 py-6 uppercase justify-center max-w-[1300px] mx-auto">
         {items.map((item, index) => (
             <motion.div
             key={item.id}
-            className="relative group rounded-xl shadow-md cursor-pointer overflow-hidden"
+            className="relative group rounded-xl shadow-md cursor-pointer overflow-hidden flex flex-col items-center justify-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -55,6 +55,7 @@ const GalleryGrid = ({ title, items, images, onClick }: GalleryGridProps) => {
             </motion.div>
         ))}
         </div>
+
     </div>
    
   );

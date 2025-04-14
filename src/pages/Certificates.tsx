@@ -1,15 +1,38 @@
 import { motion, AnimatePresence  } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import about from "../assets/images/about.jpg";
 import bg from "../assets/images/spikes.jpg";
 import { useState } from "react";
-import uiux from "../data/creative-uiux.json";
-import vector from "../data/creative-vector.json";
+import certificate from "../data/certificate.json";
+
 import GalleryGrid from "../component/GalleryGrid";
 import { PiCertificateBold } from "react-icons/pi";
 
+import coromar9 from "../assets/images/certificates/9.jpg";
+import aia8 from "../assets/images/certificates/8.jpg";
+import green12 from "../assets/images/certificates/4.jpg";
+import cert4 from "../assets/images/certificates/12.jpg";
+import accenture1 from "../assets/images/certificates/1.png";
+import dsc4 from "../assets/images/certificates/4.jpg";
+import flutter2 from "../assets/images/certificates/2.png";
+import firebase5 from "../assets/images/certificates/5.jpg";
+import android7 from "../assets/images/certificates/7.png";
+import poster10 from "../assets/images/certificates/10.jpg";
+import active11 from "../assets/images/certificates/11.jpg";
+import nstp6 from "../assets/images/certificates/6.png";
+
 const images: Record<string, string> = {
-  about,
+  coromar9,
+  aia8,
+  green12,
+  cert4,
+  accenture1,
+  dsc4,
+  flutter2,
+  firebase5,
+  android7,
+  poster10,
+  active11,
+  nstp6,
  
 };
 
@@ -87,19 +110,13 @@ export default function Certificates() {
 
 
         <GalleryGrid
-            title={"PROGRAMMING"}
-            items={uiux}
-            images={images}
-            onClick={(image) => setPreviewImage(image)}
+          title={""}
+          items={certificate}
+          images={images}
+          onClick={(image) => setPreviewImage(image)}
         />
 
-        <GalleryGrid
-            title={"GRAPHIC DESIGN / UI UX"}
-            items={vector}
-            images={images}
-            onClick={(image) => setPreviewImage(image)}
-        />
-
+       
     
 
         </div>

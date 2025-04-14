@@ -1,6 +1,5 @@
 import { motion, AnimatePresence  } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import about from "../assets/images/about.jpg";
 import bg from "../assets/images/spikes.jpg";
 import { useState } from "react";
 import uiux from "../data/creative-uiux.json";
@@ -10,9 +9,69 @@ import post from "../data/creative-post.json";
 import GalleryGrid from "../component/GalleryGrid";
 import { FiPenTool } from "react-icons/fi"; 
 
+import bigbite from "../assets/images/graphic/vector/Bigbite.gif";
+import mousepad from "../assets/images/graphic/vector/JPg.jpg";
+import res from "../assets/images/graphic/vector/res.jpg";
+import telesis from "../assets/images/graphic/vector/telesis.svg";
+import jake from "../assets/images/graphic/vector/Jake.gif";
+import battleads from "../assets/images/graphic/vector/Battleads.png";
+import doctor from "../assets/images/graphic/vector/Doctorshocked.gif";
+import stage from "../assets/images/graphic/vector/stageofdestiny.png";
+
+import anya from "../assets/images/graphic/illustration/anya.jpg";
+import aray from "../assets/images/graphic/illustration/aray.jpg";
+import cats from "../assets/images/graphic/illustration/nftcats.jpg";
+import suki from "../assets/images/graphic/illustration/suki.gif";
+import duck from "../assets/images/graphic/illustration/FatDuck2.gif";
+import fireman from "../assets/images/graphic/illustration/firefighter_characterdesign.jpg";
+import idk from "../assets/images/graphic/illustration/idk.jpg";
+import blue from "../assets/images/graphic/illustration/BlueKennel.jpg";
+
+import post1 from "../assets/images/graphic/socialmedia/1.jpg";
+import post2 from "../assets/images/graphic/socialmedia/2.jpg";
+import post3 from "../assets/images/graphic/socialmedia/3.jpg";
+import post4 from "../assets/images/graphic/socialmedia/4.jpg";
+import GalleryModalGrid from "../component/GalleryModalGrid";
+
+import aiauiux from "../assets/images/ui/aia.jpg";
+import fridge from "../assets/images/ui/refridge.gif";
+import rezuiux from "../assets/images/ui/rezsof.png";
+import battleadsuiux from "../assets/images/ui/battleads.gif";
+import bigbitesuiux from "../assets/images/ui/Bigbite.gif";
+
 const images: Record<string, string> = {
-  about,
- 
+  // Vector
+  bigbite,
+  mousepad,
+  res,
+  telesis,
+  jake,
+  battleads,
+  doctor,
+  stage,
+
+  // Illustration
+  anya,
+  aray,
+  cats,
+  suki,
+  duck,
+  fireman,
+  idk,
+  blue,
+
+  // Social Media
+  post1,
+  post2,
+  post3,
+  post4,
+
+  // UI/UX
+  aiauiux,
+  fridge,
+  rezuiux,
+  battleadsuiux,
+  bigbitesuiux,
 };
 
 export default function CreativeProjects() {
@@ -86,14 +145,13 @@ export default function CreativeProjects() {
         </AnimatePresence>
 
 
+        <GalleryModalGrid 
+          title="UI/UX PROJECTS" 
+          items={uiux} 
+          images={images}
+         />
 
-
-        <GalleryGrid
-            title={"UI UX PROJECTS"}
-            items={uiux}
-            images={images}
-            onClick={(image) => setPreviewImage(image)}
-        />
+        
 
         <GalleryGrid
             title={"VECTOR ARTS"}
