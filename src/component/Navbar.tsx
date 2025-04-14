@@ -27,6 +27,7 @@ export default function Navbar() {
       items: [
         { name: "ABOUT ME", path: "/", href: "#about" },
         { name: "ACHIEVEMENTS", path: "/", href: "#achievements" },
+        { name: "CONTACT ME", path: "/", href: "#contact" },
       ],
     },
     { name: "PROGRAMMING", path: "/programming", icon: <FiCode className="inline mr-2" /> },

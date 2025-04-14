@@ -16,7 +16,10 @@ export default function Home() {
         }}
       />
 
-        <Front />
+        <div id="contact">
+          <Front />
+        </div>
+
         
         <div id="about">
           <About />

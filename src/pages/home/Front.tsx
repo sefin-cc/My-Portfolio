@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FiGithub, FiLinkedin, FiCode, FiPenTool } from "react-icons/fi"; 
 import workspaceGif from "../../assets/images/workspace.gif";
 import { Link } from "react-router-dom";
+import { TbBrandGmail } from "react-icons/tb";
 
 export default function Front() {
     const fadeInVariant = {
@@ -61,8 +62,18 @@ export default function Front() {
               className="block text-2xl md:text-3xl mt-4 [color:var(--color-dark)]"
             />
 
+            <motion.p
+              className="mt-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+            >
+              Contact me here ↷
+            </motion.p>
+
+
             {/* Social Links */}
-            <div className="mt-6 flex justify-center gap-6 flex-wrap">
+            <div className="flex justify-center gap-6 flex-wrap">
                 {/* GitHub */}
                 <motion.a
                     href="https://github.com/sefin-cc"
@@ -85,6 +96,18 @@ export default function Front() {
                     className="transition-all duration-300 text-[color:var(--color-dark)] bg-[color:var(--color-lightpink)] p-3 rounded-full border-2 border-[color:var(--color-dark)] shadow-md hover:shadow-xl"
                 >
                     <FiLinkedin className="w-6 h-6" />
+                </motion.a>
+
+                  {/* Gmail */}
+                  <motion.a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=rogenasefin6@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.2, rotate: -5 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="transition-all duration-300 text-[color:var(--color-dark)] bg-[color:var(--color-lightpink)] p-3 rounded-full border-2 border-[color:var(--color-dark)] shadow-md hover:shadow-xl"
+                >
+                    <TbBrandGmail className="w-6 h-6" />
                 </motion.a>
             </div>
           </motion.div>
