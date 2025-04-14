@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FiMenu, FiX, FiHome, FiCode, FiPenTool } from "react-icons/fi";
-
+import { PiCertificateBold } from "react-icons/pi";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: "HOME", path: "/", icon: <FiHome className="inline mr-2" /> },
     { name: "PROGRAMMING", path: "/programming", icon: <FiCode className="inline mr-2" /> },
     { name: "CREATIVE", path: "/creative", icon: <FiPenTool className="inline mr-2" /> },
+    { name: "CERTIFICATES", path: "/certificate-credentials", icon: <PiCertificateBold className="inline mr-2" /> },
   ];
 
   return (
@@ -44,10 +45,14 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <ul
-          className={`${
-            menuOpen ? "block" : "hidden"
-          } absolute top-full left-0 w-full md:bg-transparent md:static md:flex md:space-x-6 md:w-auto`}
+          className={`absolute top-full left-0 w-full bg-white text-(--color-dark) md:text-inherit transform transition-all duration-300 ease-in-out md:transform-none md:opacity-100 md:translate-y-0 md:pointer-events-auto md:bg-transparent md:static md:flex md:space-x-6 md:w-auto ${
+            menuOpen
+              ? "opacity-100 translate-y-0 pointer-events-auto"
+              : "opacity-0 -translate-y-2 pointer-events-none"
+          }`}
         >
+
+
           {links.map(({ name, path, icon }) => (
             <li className="group relative" key={name}>
               <Link

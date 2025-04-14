@@ -1,12 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { FiGithub, FiLinkedin, FiCode, FiPenTool } from "react-icons/fi"; 
 import about from "../../assets/images/about.jpg";
-import bg from "../../assets/images/spikes.jpg";
-
-import Front from "./Front";
 import { useRef } from "react";
-import Achievements from "./Achievements";
 
 export default function About() {
   const sectionRef = useRef(null);
@@ -14,7 +9,7 @@ export default function About() {
 
   return (
     <div className="flex flex-col justify-center relative mx-4 md:mx-20 my-10 md:my-20 pb-20">
-    {/* Header Animation */}
+
         <TypeAnimation
         sequence={["ABOUT ME ", 3000]}
         wrapper="span"

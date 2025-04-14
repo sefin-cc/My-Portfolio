@@ -34,7 +34,7 @@ export default function ProgrammingProjects() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="p-4 border-4 border-[color:var(--color-dark)] rounded-full bg-[color:var(--color-lightpink)] shadow"
           >
-          <FiCode size={50} />
+          <FiCode size={50} className="text-(--color-dark)"/>
         </motion.div>
 
         <TypeAnimation

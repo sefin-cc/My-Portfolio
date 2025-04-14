@@ -5,17 +5,15 @@ import bg from "../assets/images/spikes.jpg";
 import { useState } from "react";
 import uiux from "../data/creative-uiux.json";
 import vector from "../data/creative-vector.json";
-import digital from "../data/creative-digital.json";
-import post from "../data/creative-post.json";
 import GalleryGrid from "../component/GalleryGrid";
-import { FiPenTool } from "react-icons/fi"; 
+import { PiCertificateBold } from "react-icons/pi";
 
 const images: Record<string, string> = {
   about,
  
 };
 
-export default function CreativeProjects() {
+export default function Certificates() {
     const [previewImage, setPreviewImage] = useState<string | null>(null);
 
   return (
@@ -38,11 +36,11 @@ export default function CreativeProjects() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="p-4 border-4 border-[color:var(--color-dark)] rounded-full bg-[color:var(--color-lightpink)] shadow"
         >
-        <FiPenTool size={50} className="text-(--color-dark)"/>
+        <PiCertificateBold size={50}  className="text-(--color-dark)"/>
       </motion.div>
 
         <TypeAnimation
-          sequence={["CREATIVE PROJECTS ", 3000]}
+          sequence={["CERTIFICATES & CREDENTIALS", 3000]}
           wrapper="span"
           cursor={true}
           speed={1}
@@ -57,7 +55,7 @@ export default function CreativeProjects() {
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
             className="text-lg md:text-lg pb-20 text-center"
         >
-            Here’s a glimpse into some of the creative projects I’ve been working on.
+            I am proud to share the various certificates that I have successfully earned throughout my journey.
         </motion.p>
 
     <div className="relative">
@@ -89,33 +87,20 @@ export default function CreativeProjects() {
 
 
         <GalleryGrid
-            title={"UI UX PROJECTS"}
+            title={"PROGRAMMING"}
             items={uiux}
             images={images}
             onClick={(image) => setPreviewImage(image)}
         />
 
         <GalleryGrid
-            title={"VECTOR ARTS"}
+            title={"GRAPHIC DESIGN / UI UX"}
             items={vector}
             images={images}
             onClick={(image) => setPreviewImage(image)}
         />
 
-        <GalleryGrid
-            title={"DIGITAL ILLUSTRATION"}
-            items={digital}
-            images={images}
-            onClick={(image) => setPreviewImage(image)}
-        />
-
-        <GalleryGrid
-            title={"SOCIAL MEDIA POST"}
-            items={post}
-            images={images}
-            onClick={(image) => setPreviewImage(image)}
-        />
-
+    
 
         </div>
 
