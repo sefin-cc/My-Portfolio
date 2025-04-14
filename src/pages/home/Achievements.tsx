@@ -1,12 +1,35 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import achievementsData from "../../data/achievements.json";
-import about from "../../assets/images/about.jpg"; // add other image imports if needed
+import grad1 from "../../assets/images/grad/1.jpg"; 
+import grad2 from "../../assets/images/grad/2.jpg"; 
+import grad3 from "../../assets/images/grad/3.jpg"; 
+import grad4 from "../../assets/images/grad/4.jpg"; 
+import grad5 from "../../assets/images/grad/5.jpg"; 
+import aia1 from "../../assets/images/aia/1.jpg"
+import aia2 from "../../assets/images/aia/2.jpg"
+import aia3 from "../../assets/images/aia/3.jpg"
+import aia4 from "../../assets/images/aia/4.jpg"
+import poster1 from "../../assets/images/poster/1.jpg"
+import poster2 from "../../assets/images/poster/2.jpg"
+import poster3 from "../../assets/images/poster/3.jpg"
+
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 
 const images: Record<string, string> = {
-  about,
+  grad1,
+  grad2,
+  grad3,
+  grad4,
+  grad5,
+  aia1,
+  aia2,
+  aia3,
+  aia4,
+  poster1,
+  poster2,
+  poster3
 };
 
 export default function Achievements() {
@@ -118,7 +141,7 @@ export default function Achievements() {
 
             {/* Dots */}
             <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-                {slide.imageKey.map((key, index) => (
+                {slide.imageKey.map((_key, index) => (
                 <button
                     key={index}
                     onClick={() => setImageIndex(index)}
