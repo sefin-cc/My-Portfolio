@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { FiMenu, FiX, FiHome, FiCode, FiPenTool } from "react-icons/fi";
 import { PiCertificateBold } from "react-icons/pi";
 import { scrollToHash } from "../utils/scrollToHash";
+import { setPendingHash } from "../utils/ScrollManager";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -40,14 +41,15 @@ export default function Navbar() {
 
   const handleSectionClick = (href: string) => {
     closeMenu();
+  
     if (location.pathname !== "/") {
+      setPendingHash(href);
       navigate("/", { replace: false });
-      setTimeout(() => scrollToHash(href), 50); // delay for DOM update
     } else {
       scrollToHash(href);
     }
   };
-
+  
   const toggleDropdown = (name: string) => {
     setActiveDropdown(activeDropdown === name ? null : name);
   };

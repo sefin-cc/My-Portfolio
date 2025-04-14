@@ -5,19 +5,21 @@ import Home from './pages/home/Home';
 import ProgrammingProjects from './pages/Programming';
 import CreativeProjects from './pages/Creative';
 import Certificates from './pages/Certificates';
+import ScrollToTop from './component/ScrollToTop';
 
 
 function App() {
 
   return (
     <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/programming" element={<ProgrammingProjects />} />
-      <Route path="/creative" element={<CreativeProjects />} />
-      <Route path="/certificate-credentials" element={<Certificates />} />
-    </Routes>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/programming" element={<ProgrammingProjects />} />
+        <Route path="/creative" element={<CreativeProjects />} />
+        <Route path="/certificate-credentials" element={<Certificates />} />
+      </Routes>
   </BrowserRouter>
   )
 }
