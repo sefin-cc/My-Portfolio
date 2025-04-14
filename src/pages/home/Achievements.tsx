@@ -112,7 +112,7 @@ export default function Achievements() {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: slide.imageKey.length > 1 ? 0.8 : 0 }}
-                className="h-52 sm:h-60 md:h-[600px] object-cover rounded-xl w-full"
+                className="h-[300px] sm:h-[600px] lg:h-[600px] object-cover rounded-xl w-full"
                 />
 
 
