@@ -1,7 +1,7 @@
 import { motion, AnimatePresence  } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import bg from "../assets/images/spikes.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import uiux from "../data/creative-uiux.json";
 import vector from "../data/creative-vector.json";
 import digital from "../data/creative-digital.json";
@@ -76,6 +76,18 @@ const images: Record<string, string> = {
 
 export default function CreativeProjects() {
     const [previewImage, setPreviewImage] = useState<string | null>(null);
+
+    useEffect(() => {
+      if (previewImage) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
+  
+      return () => {
+        document.body.style.overflow = "";
+      };
+    }, [previewImage]);
 
   return (
     <div className="relative min-h-screen  overflow-hidden bg-(--color-white) w-full ">

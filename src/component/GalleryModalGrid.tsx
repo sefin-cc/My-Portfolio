@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TbBrandGoogleDrive } from "react-icons/tb";
 
@@ -19,6 +19,29 @@ type GalleryModalGridProps = {
 
 const GalleryModalGrid = ({ title, items, images }: GalleryModalGridProps) => {
   const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
+
+  // Close on ESC key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setSelectedItem(null);
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  // Disable scroll on modal open
+  useEffect(() => {
+    if (selectedItem) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [selectedItem]);
+
 
   return (
     <div className="pb-20">
@@ -51,7 +74,7 @@ const GalleryModalGrid = ({ title, items, images }: GalleryModalGridProps) => {
             <img
               src={images[item.image]}
               alt={item.title}
-              className="w-full h-60 sm:h-64 md:h-72 aspect-square object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-60 sm:h-64 md:h-72 aspect-square object-cover transition duration-300 group-hover:scale-110 group-hover:brightness-90"
             />
             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white px-3 text-center">
               <h2 className="text-lg sm:text-xl font-bold">{item.title}</h2>
@@ -65,51 +88,59 @@ const GalleryModalGrid = ({ title, items, images }: GalleryModalGridProps) => {
       <AnimatePresence>
         {selectedItem && (
           <motion.div
-            className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4"
+            className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelectedItem(null)}
           >
             <motion.div
-              className="bg-white max-w-3xl w-full p-6 rounded-xl relative z-60 shadow-lg"
+              className="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto p-10 rounded-xl relative z-60 shadow-lg"
               initial={{ scale: 0.9, y: 50 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 50 }}
               transition={{ duration: 0.3 }}
               onClick={(e) => e.stopPropagation()}
             >
+              {/* Close Button */}
+              <button
+                onClick={() => setSelectedItem(null)}
+                className="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-xl font-bold"
+              >
+                ×
+              </button>
+
+              {/* Content */}
               <img
                 src={images[selectedItem.image]}
                 alt={selectedItem.title}
                 className="w-full h-64 object-contain rounded-lg mb-4"
               />
-              <h2 className="text-2xl font-bold mb-2 ">{selectedItem.title}</h2>
+              <h2 className="text-2xl font-bold mb-2">{selectedItem.title}</h2>
               <p className="text-lg uppercase">{selectedItem.caption}</p>
-              {selectedItem.description.split('\n').map((line, i) => (
-                <p key={i} className="text-gray-700 mt-2 text-justify">
+
+              <div className="text-base sm:text-md">
+                {selectedItem.description.split("\n").map((line, i) => (
+                  <p key={i} className="text-gray-700 mt-2 text-justify">
                     {line}
-                </p>
+                  </p>
                 ))}
+              </div>
 
               {selectedItem.link && (
                 <div className="w-full flex justify-center p-3">
-                    <motion.a
-                        href={selectedItem.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1, rotate: 20 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="transition-all duration-300 text-[color:var(--color-dark)] bg-[color:var(--color-lightpink)] p-3 rounded-full border-2 border-[color:var(--color-dark)] shadow-md hover:shadow-xl flex items-center justify-center w-12 h-12"
-                        >
-                        <TbBrandGoogleDrive className="w-6 h-6" />
-                    </motion.a>
+                  <motion.a
+                    href={selectedItem.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, rotate: 20 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="transition-all duration-300 text-[color:var(--color-dark)] bg-[color:var(--color-lightpink)] p-3 rounded-full border-2 border-[color:var(--color-dark)] shadow-md hover:shadow-xl flex items-center justify-center w-12 h-12"
+                  >
+                    <TbBrandGoogleDrive className="w-6 h-6" />
+                  </motion.a>
                 </div>
-               
               )}
-
-
-         
             </motion.div>
           </motion.div>
         )}
