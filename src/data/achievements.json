@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Graduated As Cum Laude from Phinma University of Pangasinan",
+      "content": "I graduated with Latin honors from Phinma University of Pangasinan, earning a Bachelor of Science in Information Technology degree, on June 19, 2024.",
+      "imageKey": ["about","about", "about" ]
+    },
+    {
+      "id": 2,
+      "title": "AIA Hackathon 2022 : Hackventure",
+      "content": "100 teams of undergraduate college students and young professionals competed at Lifehacker 2022 to develop innovative insurance solutions for Filipinos to live healthier, longer, and better lives. \n \n We, the UP CITE Team, are part of the top 20 qualifiers for the Technology category. The final round of the AIA LifeHackers 2022: HackVenture competition took place on February 25, 2023, at Marquis Events Place in Bonifacio Global City, Taguig. \n \n AIA Philippines is the largest publicly listed life insurance group in the Pan-Asia region. The project we propose is called AIA FIT, an application that utilizes gamification to educate potential insurance holders and boost leads and sales for AIA company. \n \n \n - Designed the User Interface and ensured the application's User Experience. \n \n \n - Contributed as a Graphics Designer to the application assets, graphics, and logo.",
+      "imageKey":  ["about","about", "about" ]
+    },
+    {
+      "id": 3,
+      "title": "Champion in the Digital Poster Making Contest (Desktop Publishing)",
+      "content": "It is a Digital Poster Making Contest with ten other private and public senior high schools (SHSs) in the province of Pangasinan. Contest where students are given a limited time and text/images to compete for the best brochure design using Photoshop CC.",
+      "imageKey":  ["about","about", "about" ]
+    }
+  ]
+  
