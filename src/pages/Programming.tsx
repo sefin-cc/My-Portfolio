@@ -1,0 +1,108 @@
+import { motion, useInView } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
+import { FiGithub, FiSmartphone  } from "react-icons/fi"; 
+import about from "../assets/images/about.jpg";
+import bg from "../assets/images/spikes.jpg";
+import { MdWeb } from "react-icons/md";
+import { useRef } from "react";
+import projects from "../data/programming.json";
+
+const images: Record<string, string> = {
+  about,
+ 
+};
+
+export default function ProgrammingProjects() {
+
+  return (
+    <div className="relative min-h-screen  overflow-hidden bg-(--color-white) w-full ">
+      {/* Background Image Layer with low opacity */}
+      <div
+        className="absolute inset-0 bg-repeat opacity-50 z-0"
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundSize: "auto",
+        }}
+      />
+
+
+      <div className="flex flex-col flex-wrap justify-center items-center gap-8 pr-6 pl-6 pt-28 pb-28 text-[--color-dark] relative">
+        <TypeAnimation
+          sequence={["PROGRAMMING PROJECTS ", 3000]}
+          wrapper="span"
+          cursor={true}
+          speed={1}
+          style={{ display: "inline-block", textDecoration: "underline" }}
+          className="text-2xl md:text-4xl"
+        />
+
+        <div className="flex flex-wrap gap-6 justify-center ">
+          {projects.map((project, index) => {
+            const ref = useRef(null);
+            const isInView = useInView(ref, { once: true });
+
+            return (
+              <motion.div
+                key={project.id}
+                ref={ref}
+                initial={{ opacity: 0, y: 40 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: index * 0.2, duration: 0.6, ease: "easeOut" }}
+                className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-[color:var(--color-lightpink)] p-6 border-4 border-[color:var(--color-dark)] rounded-2xl flex flex-col items-center"
+              >
+                <img
+                  src={images[project.imageKey]}
+                  alt={project.title}
+                  className="w-full h-auto max-h-72 object-cover border-0 rounded-lg mb-4"
+                />
+
+                <p className="text-xl md:text-2xl font-semibold text-center">{project.title}</p>
+                <p className="text-base md:text-lg text-center">{project.tech}</p>
+                <p className="text-sm font-normal text-justify mt-2">{project.description}</p>
+
+                <div className="mt-6 flex justify-center gap-4 flex-wrap">
+                  <motion.a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.2, rotate: 5 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="transition-all duration-300 text-[color:var(--color-dark)] bg-[color:var(--color-white)] p-3 rounded-full border-2 border-[color:var(--color-dark)] shadow-md hover:shadow-xl"
+                  >
+                    <FiGithub className="w-6 h-6" />
+                  </motion.a>
+
+                  <motion.a
+                    href={project.apk}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.2, rotate: -5 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="transition-all duration-300 text-[color:var(--color-dark)] bg-[color:var(--color-white)] p-3 rounded-full border-2 border-[color:var(--color-dark)] shadow-md hover:shadow-xl"
+                  >
+                    <FiSmartphone className="w-6 h-6" />
+                  </motion.a>
+
+                  <motion.a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.2, rotate: -5 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="transition-all duration-300 text-[color:var(--color-dark)] bg-[color:var(--color-white)] p-3 rounded-full border-2 border-[color:var(--color-dark)] shadow-md hover:shadow-xl"
+                  >
+                    <MdWeb className="w-6 h-6" />
+                  </motion.a>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+
+       </div>
+
+  
+      
+    </div>
+  );
+}

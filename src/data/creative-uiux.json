@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "title": "Sunset Bliss",
+      "caption": "A calming sunset over the ocean.",
+      "image": "about"
+    },
+    {
+      "id": 2,
+      "title": "Forest Path",
+      "caption": "A trail leading deep into the forest.",
+      "image": "about"
+    },
+    {
+      "id": 3,
+      "title": "City Lights",
+      "caption": "Skyscrapers glowing at night.",
+      "image": "about"
+    },
+    {
+        "id": 3,
+        "title": "City Lights",
+        "caption": "Skyscrapers glowing at night.",
+        "image": "about"
+      },
+      {
+        "id": 3,
+        "title": "City Lights",
+        "caption": "Skyscrapers glowing at night.",
+        "image": "about"
+      },
+      {
+        "id": 3,
+        "title": "City Lights",
+        "caption": "Skyscrapers glowing at night.",
+        "image": "about"
+      },
+      {
+        "id": 3,
+        "title": "City Lights",
+        "caption": "Skyscrapers glowing at night.",
+        "image": "about"
+      }
+  ]
