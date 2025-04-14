@@ -1,14 +1,20 @@
 import { motion, useInView } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { FiCode, FiGithub, FiSmartphone  } from "react-icons/fi"; 
-import about from "../assets/images/about.jpg";
 import bg from "../assets/images/spikes.jpg";
 import { MdWeb } from "react-icons/md";
 import { useRef } from "react";
 import projects from "../data/programming.json";
+import bari from "../assets/images/programming/baribari.gif";
+import dugong from "../assets/images/programming/dugong.gif";
+import spell from "../assets/images/programming/spellwell.gif";
+// import bari from "../assets/images/programming/baribari.gif";
+// import bari from "../assets/images/programming/baribari.gif";
 
 const images: Record<string, string> = {
-  about,
+  bari,
+  dugong,
+  spell
  
 };
 
@@ -73,12 +79,16 @@ export default function ProgrammingProjects() {
                 <img
                   src={images[project.imageKey]}
                   alt={project.title}
-                  className="w-full h-auto max-h-72 object-cover border-0 rounded-lg mb-4"
+                  className="w-full h-60 object-contain rounded-lg mb-4 bg-(--color-white) border-4 border-(--color-dark)"
                 />
 
-                <p className="text-xl md:text-2xl font-semibold text-center">{project.title}</p>
-                <p className="text-base md:text-lg text-center">{project.tech}</p>
-                <p className="text-sm font-normal text-justify mt-2">{project.description}</p>
+                <p className="text-xl md:text-2xl font-semibold text-center uppercase">{project.title}</p>
+                <p className="text-base md:text-lg text-center uppercase">{project.tech}</p>
+                {project.description.split('\n').map((line, i) => (
+                  <p key={i} className="text-sm font-normal text-justify mt-3">
+                      {line}
+                  </p>
+                ))}
 
                 <div className="mt-6 flex justify-center gap-4 flex-wrap">
                   {

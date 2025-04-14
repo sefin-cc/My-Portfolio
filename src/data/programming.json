@@ -1,52 +1,52 @@
 [
     {
       "id": 1,
-      "title": "A LONG PROJECT NAME",
-      "tech": "TECH | TECH | TECH",
+      "title": "BIG BITES",
+      "tech": "REACT JS | REACT NATIVE | LARAVEL",
       "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
-      "imageKey": "about",
+      "imageKey": "bigbites",
       "github": "https://github.com/sefin-cc",
       "apk": "https://www.linkedin.com/in/rogena-tibegar",
       "website": "https://www.linkedin.com/in/rogena-tibegar"
     },
     {
         "id": 2,
-        "title": "A LONG PROJECT NAME",
-        "tech": "TECH | TECH | TECH",
+        "title": "ARTWORKED",
+        "tech": "REACT JS | FIREBASE",
         "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
-        "imageKey": "about",
+        "imageKey": "artworked",
         "github": "https://github.com/sefin-cc",
         "apk": null,
         "website": "https://www.linkedin.com/in/rogena-tibegar"
       },
       {
         "id": 3,
-        "title": "A LONG PROJECT NAME",
-        "tech": "TECH | TECH | TECH",
-        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
-        "imageKey": "about",
+        "title": "Bari-Bari",
+        "tech": "Unity | C# | Adobe Photoshop - Jun 2022 - Oct 2022",
+        "description": "An action-packed mobile game that incorporates and explores Filipino culture, folklore, and urban legends into its design and mechanics. \n I was the lead programmer, responsible for coding game functionalities and mechanics. Additionally, I worked as a project manager, delegating tasks and organizing schedules. I also contributed to planning and developing the project idea and assets. Furthermore, I tested the game to enhance user experience and to resolve any errors and bugs found.",
+        "imageKey": "bari",
         "github": "https://github.com/sefin-cc",
         "apk": "https://www.linkedin.com/in/rogena-tibegar",
         "website": null
       },    {
         "id": 4,
-        "title": "A LONG PROJECT NAME",
-        "tech": "TECH | TECH | TECH",
-        "imageKey": "about",
-        "description": "At vero eos et accusamus et iusto odio dignissimos...",
+        "title": "Dugong the Ruined Homeland",
+        "tech": "Unity | C# | Adobe Photoshop - Jun 2022 - Mar 2023",
+        "imageKey": "dugong",
+        "description": "An engaging mobile game that promotes environmental advocacy by featuring endangered marine animals and polluted marine territories in the Philippines. \n I served as the lead programmer, overseeing the coding of game functionalities and mechanics. My responsibilities included assigning tasks to team members, managing schedules, and participating in the planning and development of the project concept. I also took part in crafting the project's research document. Additionally, I conducted thorough testing of the game to improve user experience and addressed any identified errors and bugs.",
         "github": "https://github.com/sefin-cc",
         "apk": "https://www.linkedin.com/in/rogena-tibegar",
-        "website": "https://www.linkedin.com/in/rogena-tibegar"
+        "website": null
       },
       {
         "id": 5,
-        "title": "A LONG PROJECT NAME",
-        "tech": "TECH | TECH | TECH",
-        "imageKey": "about",
-        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+        "title": "SpellWell!",
+        "tech": "Android Studio | Java | Adobe Photoshop",
+        "imageKey": "spell",
+        "description": "SpellWell is a children's game where they fill in missing letters to improve vocabulary and spelling. \n I programmed, designed, and conducted thorough testing of the game to enhance the user experience and fix any identified errors and bugs.",
         "github": "https://github.com/sefin-cc",
-        "apk": "https://www.linkedin.com/in/rogena-tibegar",
-        "website": "https://www.linkedin.com/in/rogena-tibegar"
+        "apk": null,
+        "website": null
       }
   ]
   
