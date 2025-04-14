@@ -18,9 +18,14 @@ export default function Home() {
 
         <Front />
         
-        <About />
+        <div id="about">
+          <About />
+        </div>
 
-        <Achievements />
+        
+        <div id="achievements">
+          <Achievements />
+        </div>
 
 
     </div>
