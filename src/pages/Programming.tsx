@@ -8,14 +8,19 @@ import projects from "../data/programming.json";
 import bari from "../assets/images/programming/baribari.gif";
 import dugong from "../assets/images/programming/dugong.gif";
 import spell from "../assets/images/programming/spellwell.gif";
-// import bari from "../assets/images/programming/baribari.gif";
-// import bari from "../assets/images/programming/baribari.gif";
+import bigbites from "../assets/images/programming/mergebigbites.gif";
+import artworked from "../assets/images/programming/artworked.gif";
+import connect from "../assets/images/programming/connect.gif";
+import postly from "../assets/images/programming/postly.gif";
 
 const images: Record<string, string> = {
   bari,
   dugong,
-  spell
- 
+  spell,
+  bigbites,
+  artworked,
+  connect,
+  postly
 };
 
 export default function ProgrammingProjects() {
