@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import achievementsData from "../../data/achievements.json";
 import grad1 from "../../assets/images/grad/1.jpg"; 
 import grad2 from "../../assets/images/grad/2.jpg"; 
@@ -127,16 +127,19 @@ export default function Achievements() {
           </div>
           <div className="w-full md:w-1/2 relative">
             {/* Image */}
+            <AnimatePresence mode="wait">
             <motion.img
-                key={currentImageKey}
-                src={images[currentImageKey]}
-                alt={slide.title}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: slide.imageKey.length > 1 ? 0.8 : 0 }}
-                className="h-[300px] sm:h-[600px] lg:h-[600px] object-cover rounded-xl w-full"
-                />
+              key={currentImageKey}
+              src={images[currentImageKey]}
+              alt={slide.title}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="h-[300px] sm:h-[600px] lg:h-[600px] object-cover rounded-xl w-full"
+            />
+          </AnimatePresence>
+
 
 
             {/* Dots */}
