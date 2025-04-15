@@ -2,7 +2,7 @@
     {
       "id": 1,
       "title": "BIG BITES",
-      "tech": "REACT JS | REACT NATIVE | LARAVEL | TYPESCRIPT",
+      "tech": "REACT JS | REACT NATIVE | LARAVEL | TYPESCRIPT | PostgreSQL",
       "description": "BigBites is a full-stack food ordering platform  that I developed  to streamline the customer experience with features like menu browsing, delivery or pickup options, and access to exclusive promotions. \n The admin panel includes real-time order notifications, a dashboard with activity tracking, detailed order management, and tools for customizing menus, branches, and promotions. Admins can also manage users, assign roles, and generate reports. \n On the client side, the mobile app supports a seamless order flow—from choosing pickup or delivery to payment and receipt generation. ",
       "imageKey": "bigbites",
       "github": "https://github.com/sefin-cc/BigBites",
