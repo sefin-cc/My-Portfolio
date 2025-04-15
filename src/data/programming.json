@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "title": "BIG BITES",
+      "tech": "REACT JS | REACT NATIVE | LARAVEL | TYPESCRIPT",
+      "description": "BigBites is a full-stack food ordering platform  that I developed  to streamline the customer experience with features like menu browsing, delivery or pickup options, and access to exclusive promotions. \n The admin panel includes real-time order notifications, a dashboard with activity tracking, detailed order management, and tools for customizing menus, branches, and promotions. Admins can also manage users, assign roles, and generate reports. \n On the client side, the mobile app supports a seamless order flow—from choosing pickup or delivery to payment and receipt generation. ",
+      "imageKey": "bigbites",
+      "github": "https://github.com/sefin-cc/BigBites",
+      "apk": "https://github.com/sefin-cc/BigBites/releases/tag/APK",
+      "website": "https://big-bites-admin.onrender.com"
+    },
+    {
+      "id": 2,
+        "title": "ARTWORKED",
+        "tech": "REACT JS | FIREBASE | TYPESCRIPT",
+        "description": "Artworked is a personal project of mine designed as a user-friendly social media app for artists and creators to share their work and connect with a vibrant community. It offers easy artwork uploads and interactive features like comments and likes, along with secure authentication through Firebase. With a responsive design, Artworked ensures a smooth experience across all devices. \n Built with a modern tech stack, it utilizes React.js with TypeScript for the frontend and Node.js with Express for the backend, while Firebase provides support for a real-time database. Image management is handled using Cloudinary, making Artworked an efficient platform for creatives.",
+        "imageKey": "artworked",
+        "github": "https://github.com/sefin-cc/Artworked-React",
+        "apk": null,
+        "website": "https://social-media-app-c8a1c.web.app"
+      },
+      {
+        "id": 3,
+        "title": "Postly",
+        "tech": "PHP | Laravel | Blade | MySQL ",
+        "description": "Postly is a Laravel-based web application and a Personal Project. It is designed for efficient post management, offering users the ability to create, edit, update, and delete posts through a clean and intuitive interface. It features a robust authentication system with secure login, registration, and email verification to ensure user authenticity. \n Users can easily reset forgotten passwords, and email notifications keep them informed of important updates. Powered by a MySQL database, Postly delivers reliable performance and efficient data storage for a smooth and secure user experience.",
+        "imageKey": "postly",
+        "github": "https://github.com/sefin-cc/Postly-Laravel",
+        "apk": null,
+        "website": null
+      },   
+      {
+        "id": 4,
+        "title": "Bari-Bari",
+        "tech": "Unity | C# | Adobe Photoshop - Jun 2022 - Oct 2022",
+        "description": "An action-packed mobile game that incorporates and explores Filipino culture, folklore, and urban legends into its design and mechanics. \n I was the lead programmer, responsible for coding game functionalities and mechanics. Additionally, I worked as a project manager, delegating tasks and organizing schedules. I also contributed to planning and developing the project idea and assets. Furthermore, I tested the game to enhance user experience and to resolve any errors and bugs found.",
+        "imageKey": "bari",
+        "github": null,
+        "apk": null,
+        "website": null
+      },   
+      {
+        "id": 5,
+        "title": "Dugong the Ruined Homeland",
+        "tech": "Unity | C# | Adobe Photoshop - Jun 2022 - Mar 2023",
+        "imageKey": "dugong",
+        "description": "An engaging mobile game that promotes environmental advocacy by featuring endangered marine animals and polluted marine territories in the Philippines. \n I served as the lead programmer, overseeing the coding of game functionalities and mechanics. My responsibilities included assigning tasks to team members, managing schedules, and participating in the planning and development of the project concept. I also took part in crafting the project's research document. Additionally, I conducted thorough testing of the game to improve user experience and addressed any identified errors and bugs.",
+        "github": "https://github.com/sefin-cc/Dugong--The-Ruined-Homeland",
+        "apk": null,
+        "website": null
+      },
+      {
+        "id": 6,
+        "title": "Connect 4!",
+        "tech": "REACT JS",
+        "imageKey": "connect",
+        "description": "A simple Connect 4 browser game created using React.js.",
+        "github": "https://github.com/sefin-cc/connect-4",
+        "apk": null,
+        "website": "https://playconnect4-rsgt.netlify.app"
+      },
+      {
+        "id": 7,
+        "title": "SpellWell!",
+        "tech": "Android Studio | Java | Adobe Photoshop",
+        "imageKey": "spell",
+        "description": "SpellWell is a children's game where they fill in missing letters to improve vocabulary and spelling. \n I programmed, designed, and conducted thorough testing of the game to enhance the user experience and fix any identified errors and bugs.",
+        "github": null,
+        "apk": null,
+        "website": null
+      }
+  ]
+  

@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+      --color-dark: #2F2031;
+      --color-gray: #6A6670;
+      --color-battlegray: #869791;
+      --color-pink: #d3afb6;
+      --color-lightpink: #edd6e2;
+      --color-white: #ede8f5;
+    }
+  }

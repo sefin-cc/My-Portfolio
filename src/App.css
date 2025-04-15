@@ -1,2 +1,35 @@
 @import "tailwindcss";
+@import './assets/theme.css';
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray);
+  border-radius: 10px;
+  border: 2px solid transparent; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-gray);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray) transparent;
+}
