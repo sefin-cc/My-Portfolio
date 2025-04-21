@@ -41,6 +41,7 @@ export default function About() {
         <div className="flex-shrink-0">
           <img
             src={about}
+            loading="lazy"
             className="w-[200px] md:w-[400px] object-cover rounded-full border-4 md:border-8 border-(--color-gray)"
             alt="About me"
           />

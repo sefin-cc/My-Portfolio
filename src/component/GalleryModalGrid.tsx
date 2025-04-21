@@ -73,6 +73,7 @@ const GalleryModalGrid = ({ title, items, images }: GalleryModalGridProps) => {
           >
             <img
               src={images[item.image]}
+              loading="lazy"
               alt={item.title}
               className="w-full h-60 sm:h-64 md:h-72 aspect-square object-cover transition duration-300 group-hover:scale-110 group-hover:brightness-90"
             />
@@ -95,7 +96,7 @@ const GalleryModalGrid = ({ title, items, images }: GalleryModalGridProps) => {
             onClick={() => setSelectedItem(null)}
           >
             <motion.div
-              className="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto p-10 rounded-xl relative z-60 shadow-lg"
+              className="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto p-4 sm:p-10 rounded-xl relative z-60 shadow-lg"
               initial={{ scale: 0.9, y: 50 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 50 }}
@@ -113,6 +114,7 @@ const GalleryModalGrid = ({ title, items, images }: GalleryModalGridProps) => {
               {/* Content */}
               <img
                 src={images[selectedItem.image]}
+                loading="lazy"
                 alt={selectedItem.title}
                 className="w-full h-64 object-contain rounded-lg mb-4"
               />

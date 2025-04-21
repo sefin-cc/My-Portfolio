@@ -146,6 +146,7 @@ export default function CreativeProjects() {
             <motion.img
                 src={previewImage}
                 alt="Preview"
+                loading="lazy"
                 className="max-w-full max-h-full object-contain rounded-lg"
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}

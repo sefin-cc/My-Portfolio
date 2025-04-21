@@ -13,6 +13,7 @@ import artworked from "../assets/images/programming/artworked.gif";
 import connect from "../assets/images/programming/connect.gif";
 import postly from "../assets/images/programming/postly.gif";
 
+
 const images: Record<string, string> = {
   bari,
   dugong,
@@ -84,6 +85,7 @@ export default function ProgrammingProjects() {
                 <img
                   src={images[project.imageKey]}
                   alt={project.title}
+                  loading="lazy"
                   className="w-full h-60 object-contain rounded-lg mb-4 bg-(--color-white) border-4 border-(--color-dark)"
                 />
 

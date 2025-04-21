@@ -45,6 +45,7 @@ const GalleryGrid = ({ title, items, images, onClick }: GalleryGridProps) => {
             >
             <img
                 src={images[item.image]}
+                loading="lazy"
                 alt={item.title}
                 className="w-full h-60 sm:h-64 md:h-72 aspect-square object-cover transition-transform duration-300 group-hover:scale-110"
             />
