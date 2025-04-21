@@ -129,6 +129,7 @@ export default function Achievements() {
             {/* Image */}
             <AnimatePresence mode="wait">
             <motion.img
+              loading="lazy"
               key={currentImageKey}
               src={images[currentImageKey]}
               alt={slide.title}
