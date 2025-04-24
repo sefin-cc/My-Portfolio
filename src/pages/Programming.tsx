@@ -12,7 +12,7 @@ import bigbites from "../assets/images/programming/mergebigbites.gif";
 import artworked from "../assets/images/programming/artworked.gif";
 import connect from "../assets/images/programming/connect.gif";
 import postly from "../assets/images/programming/postly.gif";
-
+import whochat from "../assets/images/programming/whochat.gif";
 
 const images: Record<string, string> = {
   bari,
@@ -21,7 +21,8 @@ const images: Record<string, string> = {
   bigbites,
   artworked,
   connect,
-  postly
+  postly,
+  whochat
 };
 
 export default function ProgrammingProjects() {
